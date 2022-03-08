@@ -1,0 +1,69 @@
+/* Putting a style on the header */
+header{
+
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Changes the font family, background color and margin/border*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(104, 187, 176);
+    margin:auto 
+}
+
+/* Changes the height and color of the main content */
+div {
+    height: 100%;
+    background-color: #aad4cf;
+}
+
+/* Styles the button */
+#button {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+#image {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+
+    max-width: 850px;
+}
+
+/* Adds the spacing for the navigation bar */
+a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;  
+    margin-right: 1px;
+}
+
+/* Wraps the image with the text */
+.one img{
+    float: left;
+}
+
+img {
+    max-width: 150%;
+    max-height: 150%;
+}
+
+/* Styles the little image */ 
+#image2 {  
+    display: block;  
+    margin-left: 5px;  
+    margin-right: 50px;  
+    padding: 5px;  
+    }  
+
+
+.section {
+    border: solid black;
+}
+
+
