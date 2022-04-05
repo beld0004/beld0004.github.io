@@ -1,3 +1,38 @@
-body {
-    background-color: #369;
+.header_nav {
+    margin-left: 40em;
+    font-family: arial;
+    list-style: none;
+    
 }
+
+.button {
+    background-color: #FFBB12;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.fa-solid {
+    color: black;
+}
+
+.button2 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
