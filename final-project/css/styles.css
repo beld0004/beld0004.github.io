@@ -1,67 +1,571 @@
-.logo {
-    background-color: #c78c06;
-    margin: 10px;
-    margin-bottom: 10px;
+/* RESET CODE */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.nav {
-    background-color: #222;
-    margin-bottom: 10p;
-}
-
-.header_nav {
-    display: flex;
-    flex-direction: column;
-
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 
+/* color styles 
+gold: #c78c06
+light-gold: #ffe6ac
+off-black: #222
+white: #fff
+*/
 
-.button {
-    background-color: #FFBB12;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
 .fa-solid {
-    color: black;
+  color: black;
 }
 
-.button2 {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 20px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+@media screen and (min-width: 760px) {
+.wrapper {
+  width: auto;
+}
+    
+}
+
+@media screen and (min-width: 760px) {
+.wrapper {
+  width: auto;
+}
+}
+
+html * {
+font-family: 'Open Sans', sans-serif;
+box-sizing: border-box;
+}
+
+/* wrapper style */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* article styles  */
+.article-card {
+  background-color: #ffe6ac;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.article-card-content-container {
+  padding: 8px;
+}
+
+.article-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.article-h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 0;
+}
+
+.article-p {
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 4px 0;
+}
+
+.article-btn {
+  padding: 20px;
+  outline: none;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.article-btn-icon {
+  font-size: 24px;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.article-btn:hover {
+  background-color: #c78c06;
+  color: #222;
+}
+
+.article-btn:hover .article-btn-icon {
+  color: #222;
+}
+
+.article-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1.5px solid #c78c06;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+}
+
+/* nav styles */
+.nav {
+  padding: 8px;
+  background-color: #222;
+}
+
+.nav-logo {
+  height: 64px;
+  width: 64px;
+}
+
+.nav-logo-bg {
+  background-color: #c78c06;
+  padding: 14px 0;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links-item {
+  text-align: center;
+  padding: 14px;
+  color: #c78c06;
+  font-size: 12px;
+}
+
+.nav-links-item:hover {
+  background-color: #c78c06; 
+}
+
+.nav-links-item:hover a {
+  color: #222;
+}
+
+.nav-links-item-active {
+  background-color: #c78c06;
+  color: #222;
+}
+
+.nav-search {
+  padding: 4px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.nav-search::placeholder {
+  font-weight: 400;
+  color: #222;
+}
+
+.nav-search-container {
+  display: flex;
+  height: 28.5px;
+}
+
+.nav-search-icon-container {
+  color: #c78c06;
+  height: 100%;
+}
+
+.nav-search-icon {
+  color: #c78c06;
+  border: 1px solid #c78c06;
+  padding: 4px;
+  height: 100%;
+}
+
+/* jumbotron styles */
+.jumbotron {
+  position: relative;
+  padding: 48px 0;
+}
+
+.jumbotron-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.jumbotron-bg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.jumbotron-content-container {
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 8px;
+}
+
+.jumbotron-content-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 24px 0;
+}
+
+.jumbotron-button {
+  padding: 20px;
+  background-color: #c78c06;
+  outline: none;
+  border: none;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron-button-icon {
+  font-size: 21px;
+  padding-left: 8px;
+}
+
+/* about us section */
+.about-us {
+  padding: 8px;
+  background-color: #ffe6ac;
+}
+
+.about-us-content-container {
+  padding: 14px 0;
+}
+
+/* our services section*/
+.our-services {
+  padding: 16px 8px;
+}
+
+/* our vision section */
+.our-vision {
+  position: relative;
+  color: #fff;
+}
+
+.our-vision-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.our-vision-content-container {
+  padding: 8px;
+}
+
+.our-vision-btn {
+  padding: 20px;
+  border: 1px solid #c78c06;
+  color: #fff;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.our-vision-btn-icon {
+  font-size: 21px;
+  margin-left: 8px;
+  color: #fff; 
+}
+
+.our-vision-btn:hover {
+  color: #222;
+  background-color: #c78c06;
+  border: 1px solid black;
+}
+
+.our-vision-btn:hover .our-vision-btn-icon {
+  color: #222;
+}
+
+/* our team section */
+.our-team {
+  padding: 16px 8px;
+}
+
+/* contact us section */
+.contact-us {
+  padding: 16px 8px;
+}
+
+.contact-us-field-container {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+}
+
+.contact-us-field-label {
+  font-size: 10px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.contact-us-field {
+  padding: 4px;
+}
+
+.contact-us-submit {
+  border: none;
+  background: #222;
+  color: #c78c06;
+  font-weight: 600;
+}
+
+/* hours of operation section */
+.hours-of-operation {
+  padding: 8px;
+}
+
+.hours-of-operation-table-container {
+  border: 0.5px solid black;
+}
+.hours-of-operation-table-row {
+  display: flex;
+}
+
+.hours-of-operation-table-header {
+  text-align: center;
+  background-color: #ffe6ac;
+}
+
+
+.hours-of-operation-table-field {
+  padding: 8px;
+  border: 0.5px solid black;
+}
+
+.hours-of-operation-table-field:first-of-type {
+  flex-grow: 1;
+}
+
+.hours-of-operation-table-field:last-of-type {
+  flex-basis: 40%;
+}
+
+/* location section */
+.location {
+  padding: 8px;
+}
+
+.location-map {
+  width: 100%;
+  height: 300px;
+}
+
+/* footer section */
+.footer {
+  padding: 8px;
+  background-color: #222;
+  color: #c78c06;
+}
+
+/* desktop view media query */
+@media screen and (min-width: 768px) {
+
+  /* article style  */
+  .article-p {
+    font-size: 14px;
+  }
+
+  .article-h2 {
+    font-size: 42px;
+  }
+
+  .article-h3 {
+    font-size: 24px;
+  }
+  
+  .article-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 12px;
+  }
+
+  .article-card-group > :nth-of-type(1),
+  .article-card-group > :nth-of-type(2) {
+    flex-basis: 45%;
+  }
+
+  .article-card {
+    flex-basis: 30%;
+    flex-grow: 1;
+  }
+
+
+
+  /* nav section  */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 72px;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links-item {
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  }
+
+  .nav-logo-bg {
+    background-color: unset;
+  }
+
+  /* jumbotron section */
+  .jumbotron {
+    padding: 48px 72px;
+  }
+
+  .jumbotron-content-title {
+    font-size: 64px;
+  }
+
+
+  /* about us section */
+  .about-us {
+    padding: 8px 72px;
+  }
+
+  .about-us-container {
+    display: flex;
+  }
+
+  .about-us-content-container {
+    padding-left: 8px;
+    width: 80%;
+  }
+
+  /* our services section */
+
+  .our-services {
+    padding: 16px 72px;
+  }
+
+  /* our vision section */
+  .our-vision-content-container {
+    padding: 8px 72px;
+  }
+
+  /* our team section */
+  .our-team {
+    padding: 16px 72px;
+  }
+
+  .our-team .article-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  .our-team .article-card:last-of-type .article-card-bg-container {
+    order: 2;
+  }
+
+  /* contact group section */
+  .contact-group {
+    padding: 16px 72px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-group > * {
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+
+  .contact-group .hours-of-operation {
+    order: 3;
+  }
+
+  .footer {
+    padding: 16px 72px;
+  }
 }
 
-.logo {
-    background-color: #c78c06;
-}
+/* spacing fix desktop */
+@media screen and (min-width: 840px) {
+  .nav {
+    padding: 0 124px;
+  }
 
-@media screen and (min-width: 760px) {
-    .wrapper {
-        width: auto;
-    }
-    
-}
+  .jumbotron {
+    padding: 48px 124px;
+  }
 
-@media screen and (min-width: 760px) {
-    .wrapper {
-        width: auto;
-    }
-    
+  .about-us,
+  .our-vision-content-container {
+    padding: 8px 124px;
+  }
 
-
+  .our-services,
+  .our-team, 
+  .contact-group,
+  .footer {
+    padding: 16px 124px;
+  }
 }
