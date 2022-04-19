@@ -1,9 +1,21 @@
-.header_nav {
-    margin-left: 40em;
-    font-family: arial;
-    list-style: none;
-    
+.logo {
+    background-color: #c78c06;
+    margin: 10px;
+    margin-bottom: 10px;
 }
+
+.nav {
+    background-color: #222;
+    margin-bottom: 10p;
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 
 .button {
     background-color: #FFBB12;
@@ -34,5 +46,22 @@
     cursor: pointer;
 }
 
+.logo {
+    background-color: #c78c06;
+}
+
+@media screen and (min-width: 760px) {
+    .wrapper {
+        width: auto;
+    }
+    
+}
+
+@media screen and (min-width: 760px) {
+    .wrapper {
+        width: auto;
+    }
+    
 
 
+}
